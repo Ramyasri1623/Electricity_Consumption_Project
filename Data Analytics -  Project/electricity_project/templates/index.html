@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electricity Consumption Analysis</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6fb;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #e9edf7;
+  padding: 15px 0;
+}
+
+.nav-link {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.hero {
+  padding: 140px 20px 80px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+section {
+  padding: 80px 0;
+}
+
+footer {
+  background: #1f2d3d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Electricity Analysis</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#dashboard1">Dashboard 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="#dashboard2">Dashboard 2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#dashboard3">Dashboard 3</a></li>
+        <li class="nav-item"><a class="nav-link" href="#story">Story</a></li>
+        <li class="nav-item"><a class="nav-link" href="#conclusion">Conclusion</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="container text-center">
+
+    <h1>Analysis on Electricity Consumption In India</h1>
+
+    <p class="lead">
+      This project analyzes electricity generation trends,
+      regional consumption patterns, and future demand growth in India.
+    </p>
+
+    <a href="#dashboard1" class="btn btn-primary mb-4">Explore Dashboards</a>
+
+    <!-- HOME IMAGE -->
+     
+    <div class="mt-4">
+     <img src="{{ url_for('static', filename='images/home.png') }}"
+     class="img-fluid"
+     style="max-width: 900px; border-radius: 15px;">
+
+      
+
+    </div>
+
+  </div>
+</section>
+
+<!-- DASHBOARD 1 -->
+<section id="dashboard1">
+  <div class="container text-center">
+    <h2>Dashboard 1</h2>
+    <div class='tableauPlaceholder' id='viz1771405743046' style='position: relative'>
+      <noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_17706478858580&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book1_17706478858580&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_17706478858580&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1771405743046');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1577px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    
+  </div>
+</section>
+
+<!-- DASHBOARD 2 -->
+<section id="dashboard2" class="bg-light">
+  <div class="container text-center">
+    <h2>Dashboard 2</h2>
+
+    <div class='tableauPlaceholder' id='viz1771352098598' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt='Dashboard 2'
+          src='https://public.tableau.com/static/images/Bo/Book1_17706478858580/Dashboard2/1_rss.png'
+          style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='name' value='Book1_17706478858580/Dashboard2' />
+        <param name='toolbar' value='yes' />
+      </object>
+    </div>
+
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1771352098598');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = "100%";
+      vizElement.style.height = "700px";
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+  </div>
+</section>
+
+<!-- DASHBOARD 3 -->
+<section id="dashboard3">
+  <div class="container text-center">
+    <h2>Dashboard 3</h2>
+
+    <div class='tableauPlaceholder' id='viz1771352202709' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt='Dashboard 3'
+          src='https://public.tableau.com/static/images/Bo/Book1_17706478858580/Dashboard3/1_rss.png'
+          style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='name' value='Book1_17706478858580/Dashboard3' />
+        <param name='toolbar' value='yes' />
+      </object>
+    </div>
+
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1771352202709');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = "100%";
+      vizElement.style.height = "700px";
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+  </div>
+</section>
+
+<!-- STORY -->
+<section id="story" class="bg-light">
+  <div class="container text-center">
+    <h2>Story Visualization</h2>
+
+    <div class='tableauPlaceholder' id='viz1771352563273' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt='Story'
+          src='https://public.tableau.com/static/images/st/storyforelectricity/StoryforElectricityconsumptioninIndia/1_rss.png'
+          style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https://public.tableau.com/' />
+        <param name='embed_code_version' value='3' />
+        <param name='name' value='storyforelectricity/StoryforElectricityconsumptioninIndia' />
+        <param name='toolbar' value='yes' />
+      </object>
+    </div>
+
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1771352563273');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = "100%";
+      vizElement.style.height = "700px";
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+  </div>
+</section>
+
+
+<!-- CONCLUSION -->
+<section id="conclusion" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Conclusion</h2>
+
+    <div class="row align-items-center">
+
+      <!-- LEFT SIDE: TABLEAU -->
+      <div class="col-md-6">
+
+        <div class='tableauPlaceholder' id='viz1771404024654' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt='Total Consumption'
+              src='https://public.tableau.com/static/images/Bo/Book1_17706478858580/TotalConsumption/1_rss.png'
+              style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https://public.tableau.com/' />
+            <param name='embed_code_version' value='3' />
+            <param name='name' value='Book1_17706478858580/TotalConsumption' />
+            <param name='toolbar' value='yes' />
+          </object>
+        </div>
+
+        <script>
+          var divElement = document.getElementById('viz1771404024654');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width = "100%";
+          vizElement.style.height = "450px";  // smaller height
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+
+      </div>
+
+      <!-- RIGHT SIDE: POINTS -->
+      <div class="col-md-6">
+        <h4 class="mb-4">Electricity Consumption Insights</h4>
+
+        <ul class="list-unstyled fs-5">
+          <li class="mb-3">✔ Maharashtra recorded the highest electricity consumption in 2019 and 2020.</li>
+          <li class="mb-3">✔ Gujarat and Tamil Nadu remain among the top energy consuming states.</li>
+          <li class="mb-3">✔ 2020 shows a slight overall decline compared to 2019.</li>
+          <li class="mb-3">✔ Industrialized states demonstrate significantly higher electricity demand.</li>
+          <li class="mb-3">✔ Sikkim and Mizoram record the lowest electricity consumption levels.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- QUARTERWISE CONCLUSION -->
+<section id="quarterwise-conclusion" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Quarterwise Analysis</h2>
+
+    <div class="row align-items-center">
+
+      <!-- LEFT SIDE: YOUR EMBEDDED TABLEAU CHART -->
+      <div class="col-md-6">
+
+        <!-- KEEP YOUR EXISTING EMBED CODE HERE -->
+         <div class='tableauPlaceholder' id='viz1771404305862' style='position: relative'>
+        <noscript><a href='#'><img alt='Quarterwise Usage ' 
+          src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_17706478858580&#47;QuarterwiseUsage&#47;1_rss.png' 
+          style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+             <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+             <param name='name' value='Book1_17706478858580&#47;QuarterwiseUsage' />
+             <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+             <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_17706478858580&#47;QuarterwiseUsage&#47;1.png' />
+              <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+              <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+              <param name='display_count' value='yes' /><param name='language' value='en-GB' />
+              <param name='filter' value='publish=yes' /></object></div>                
+              <script type='text/javascript'>                    
+              var divElement = document.getElementById('viz1771404305862');                    
+              var vizElement = divElement.getElementsByTagName('object')[0];                   
+              vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';         
+                         var scriptElement = document.createElement('script');                  
+                           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';          
+                                     vizElement.parentNode.insertBefore(scriptElement, vizElement);            
+                                         </script>
+
+        <script>
+          var divElement = document.getElementById('YOUR_VIZ_ID');
+          if(divElement){
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = "100%";
+            vizElement.style.height = "450px";
+          }
+        </script>
+
+      </div>
+
+      <!-- RIGHT SIDE: POINTS -->
+      <div class="col-md-6">
+
+        <h4 class="mb-4">Quarterwise Electricity Insights</h4>
+
+        <ul class="list-unstyled fs-5">
+          <li class="mb-3">✔ Q3 2019 recorded the highest electricity consumption (~326K units).</li>
+          <li class="mb-3">✔ Electricity demand remained consistently high throughout 2019.</li>
+          <li class="mb-3">✔ A sharp decline is observed across all quarters in 2020.</li>
+          <li class="mb-3">✔ Q3 2020 shows the lowest recorded consumption (~52K units).</li>
+          <li class="mb-3">✔ The drop indicates reduced industrial and commercial activity.</li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- REGIONAL CONCLUSION -->
+<section id="regional-conclusion" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Regional Analysis</h2>
+
+    <div class="row align-items-center">
+
+      <!-- LEFT SIDE: YOUR EMBED CODE -->
+      <div class="col-md-6">
+        <div class='tableauPlaceholder' id='viz1771404744807' 
+      style='position: relative'><noscript><a href='#'>
+        <img alt='Yearwise Consumption in regions ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_17706478858580&#47;YearwiseConsumptioninregions&#47;1_rss.png'
+         style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+          <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+          <param name='name' value='Book1_17706478858580&#47;YearwiseConsumptioninregions' />
+          <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_17706478858580&#47;YearwiseConsumptioninregions&#47;1.png' /> 
+          <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' /><param name='language' value='en-GB' />
+          <param name='filter' value='publish=yes' /></object></div>                
+          <script type='text/javascript'>                    
+          var divElement = document.getElementById('viz1771404744807');                    
+          var vizElement = divElement.getElementsByTagName('object')[0];                    
+          vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+          var scriptElement = document.createElement('script');                    
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+          </script>
+
+
+        <script>
+          var divElement = document.getElementById('YOUR_VIZ_ID');
+          if(divElement){
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = "100%";
+            vizElement.style.height = "450px";
+          }
+        </script>
+
+      </div>
+
+      <!-- RIGHT SIDE: POINTS -->
+      <div class="col-md-6">
+
+        <h4 class="mb-4">Regional Electricity Insights</h4>
+
+        <ul class="list-unstyled fs-5">
+          <li class="mb-3">✔ Western Region recorded the highest consumption in both years.</li>
+          <li class="mb-3">✔ Northern and Southern regions were major contributors in 2019.</li>
+          <li class="mb-3">✔ 2020 shows a significant decline across all regions.</li>
+          <li class="mb-3">✔ Eastern Region maintains comparatively lower usage levels.</li>
+          <li class="mb-3">✔ Regional ranking pattern remains consistent year-on-year.</li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+  
+
+  
+
+<footer>
+  © 2026 Electricity Consumption Analysis | Internship Project
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
